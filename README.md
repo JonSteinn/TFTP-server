@@ -12,7 +12,7 @@ This TFTP server does not support WRQ. Any put request from a TFTP client will b
 This server is only unix compatable and requires glib2.0 to run.
 
 ## Run
-From the project root's directiory, this is an example for port 12345.
+From the project root's directiory, this is an example for port 12345 and access only to a folder called data in the root.
 ```sh
 $ make -C ./src
 $ ./src/tftpd 12345 data
