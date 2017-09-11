@@ -63,7 +63,7 @@ typedef struct
     time_t last_action;
 } client_value;
 ```
-# Server info
+### Server info
 Server info holds various variables for receiving and sending and is mostly to avoid bloated parameter list.
 ```C
 typedef struct
