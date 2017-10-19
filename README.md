@@ -5,6 +5,9 @@ Written in C, based on [RFC1350](https://tools.ietf.org/html/rfc1350)
 Jón Steinn Elíasson
 jonsteinn@gmail.com
 
+## Video demo
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/mXTAI9IAiY0/maxresdefault.jpg)](https://www.youtube.com/watch?v=mXTAI9IAiY0)
+
 ## Limitations
 This TFTP server does not support WRQ. Any put request from a TFTP client will be responded to with an error package.
 
@@ -19,11 +22,11 @@ $ ./src/tftpd 12345 data
 ```
 To run a client and get a file test.txt, use either 
 ```sh
-$ tftpd 127.0.0.1 12345 -c get test.txt
+$ tftp 127.0.0.1 12345 -c get test.txt
 ```
 for netascii mode or
 ```sh
-$ tftpd 127.0.0.1 12345 -m octet -c get test.txt
+$ tftp 127.0.0.1 12345 -m octet -c get test.txt
 ```
 for octed mode.
 
